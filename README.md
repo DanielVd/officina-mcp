@@ -10,10 +10,10 @@ Server MCP minimale pensato per testare integrazione tra client AI e strumenti M
 
 ## Strumenti disponibili
 
-- `ping_italiano`
+- `verifica_collegamento`
   - input: `messaggio` opzionale
   - output: `pong` o `pong: <messaggio>`
-- `somma_due_numeri`
+- `calcola_somma`
   - input: `numero_a`, `numero_b`
   - output: `Risultato: <somma>`
 
@@ -54,7 +54,7 @@ Esempio configurazione (client che supporta comando stdio):
 ```json
 {
   "mcpServers": {
-    "mcp-tester-italiano": {
+    "officina-mcp": {
       "command": "node",
       "args": ["/percorso/progetto/dist/server.js"]
     }

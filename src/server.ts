@@ -1,21 +1,21 @@
 import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
 import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js';
 import { z } from 'zod';
-import { pingItaliano, sommaSicura } from './logica.js';
+import { verificaCollegamento, calcolaSomma } from './logica.js';
 
 const server = new McpServer({
-  name: 'mcp-tester-italiano',
+  name: 'officina-mcp',
   version: '0.1.0'
 });
 
 server.tool(
-  'ping_italiano',
+  'verifica_collegamento',
   'Risponde con pong oppure pong: <messaggio>',
   {
     messaggio: z.string().optional().describe('Messaggio opzionale')
   },
   async ({ messaggio }) => {
-    const risposta = pingItaliano(messaggio);
+    const risposta = verificaCollegamento(messaggio);
     return {
       content: [{ type: 'text', text: risposta }]
     };
@@ -23,14 +23,14 @@ server.tool(
 );
 
 server.tool(
-  'somma_due_numeri',
+  'calcola_somma',
   'Somma due numeri interi o decimali',
   {
     numero_a: z.number().describe('Primo numero'),
     numero_b: z.number().describe('Secondo numero')
   },
   async ({ numero_a, numero_b }) => {
-    const risultato = sommaSicura(numero_a, numero_b);
+    const risultato = calcolaSomma(numero_a, numero_b);
     return {
       content: [{ type: 'text', text: `Risultato: ${risultato}` }]
     };

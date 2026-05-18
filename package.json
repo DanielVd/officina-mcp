@@ -1,5 +1,5 @@
 {
-  "name": "mcp-tester-italiano",
+  "name": "officina-mcp",
   "version": "0.1.0",
   "description": "Server MCP minimale per test integrazione AI in italiano",
   "main": "index.js",

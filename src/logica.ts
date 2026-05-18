@@ -1,4 +1,4 @@
-export function pingItaliano(messaggio?: string): string {
+export function verificaCollegamento(messaggio?: string): string {
   const testo = messaggio?.trim();
   if (!testo) {
     return 'pong';
@@ -6,6 +6,6 @@ export function pingItaliano(messaggio?: string): string {
   return `pong: ${testo}`;
 }
 
-export function sommaSicura(a: number, b: number): number {
+export function calcolaSomma(a: number, b: number): number {
   return a + b;
 }
