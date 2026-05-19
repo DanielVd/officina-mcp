@@ -1,6 +1,5 @@
 # officina-mcp
 
-[![CI](https://github.com/DanielVd/officina-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/DanielVd/officina-mcp/actions/workflows/ci.yml)
 ![Node](https://img.shields.io/badge/node-20%2B-green)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 
