@@ -1,108 +1,45 @@
 # officina-mcp
 
-![Node](https://img.shields.io/badge/node-20%2B-green)
-[![Latest Release](https://img.shields.io/github/v/release/DanielVd/officina-mcp)](https://github.com/DanielVd/officina-mcp/releases/latest)
-![License](https://img.shields.io/badge/license-MIT-blue)
+## Indice
 
-Server MCP minimale per testare integrazione tra client AI e strumenti MCP, con output e messaggi in italiano.
-
-## Table of Contents
-
-- [Features](#features)
-- [Requirements](#requirements)
-- [Installation](#installation)
-- [Quick Start](#quick-start)
-- [Tools](#tools)
-- [Usage with MCP Clients](#usage-with-mcp-clients)
-- [Quality](#quality)
+- [Panoramica](#panoramica)
+- [Funzionalità](#funzionalità)
+- [Requisiti](#requisiti)
+- [Installazione](#installazione)
+- [Avvio Rapido](#avvio-rapido)
+- [Configurazione](#configurazione)
+- [Comandi/Strumenti](#comandistrumenti)
 - [Troubleshooting](#troubleshooting)
-- [Security Notes](#security-notes)
-- [Contributing](#contributing)
-- [License](#license)
+- [Sicurezza](#sicurezza)
+- [Contributi](#contributi)
+- [Licenza](#licenza)
 
-## Features
+## Panoramica
 
-- Tool MCP base per smoke test rapido
-- Messaggi, tool e output in italiano
-- Base pulita per estendere test MCP
+> Aggiornare con scopo progetto in 1-2 frasi.
 
-## Requirements
+## Funzionalità
 
-- Node.js 20+
-- npm 10+
+> Elenco punti chiave.
 
-## Installation
+## Requisiti
 
-```bash
-npm install
-npm run build
-```
+## Installazione
 
-## Quick Start
+## Avvio Rapido
 
-```bash
-npm run dev
-```
+## Configurazione
 
-Oppure build + start:
-
-```bash
-npm run build
-npm start
-```
-
-## Tools
-
-- `verifica_collegamento`
-  - input: `messaggio` (opzionale)
-  - output: `pong` oppure `pong: <messaggio>`
-- `calcola_somma`
-  - input: `numero_a`, `numero_b`
-  - output: `Risultato: <somma>`
-
-## Usage with MCP Clients
-
-Esempio configurazione per client MCP su `stdio`:
-
-```json
-{
-  "mcpServers": {
-    "officina-mcp": {
-      "command": "node",
-      "args": ["/percorso/progetto/dist/server.js"]
-    }
-  }
-}
-```
-
-## Quality
-
-- TypeScript strict mode
-- lint con ESLint
-- test unitari con Vitest
-
-Comandi:
-
-```bash
-npm run lint
-npm run test
-```
+## Comandi/Strumenti
 
 ## Troubleshooting
 
-- `tool not found`: verifica percorso `dist/server.js` e `npm run build`
-- `EADDRINUSE`: porta già occupata da altro processo
-- crash in startup: verifica versione Node (`node -v`, richiesta 20+)
+## Sicurezza
 
-## Security Notes
+## Contributi
 
-- Non esporre server MCP su rete pubblica senza controllo accessi
-- Non loggare segreti in output tool
+## Licenza
 
-## Contributing
+## Existing Notes
 
-Pull request benvenute. Apri issue per bug o richieste feature.
 
-## License
-
-MIT
