@@ -1,4 +1,5 @@
 # officina-mcp
+[![Latest Release](https://img.shields.io/github/v/release/DanielVd/officina-mcp)](https://github.com/DanielVd/officina-mcp/releases/latest)
 
 ## Indice
 
@@ -41,5 +42,4 @@
 ## Licenza
 
 ## Existing Notes
-
 
