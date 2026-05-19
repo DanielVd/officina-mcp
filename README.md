@@ -1,45 +1,60 @@
 # officina-mcp
+
 [![Latest Release](https://img.shields.io/github/v/release/DanielVd/officina-mcp)](https://github.com/DanielVd/officina-mcp/releases/latest)
+![Node](https://img.shields.io/badge/node-20%2B-green)
+![License](https://img.shields.io/badge/license-MIT-blue)
+
+Server MCP minimale in italiano per validare integrazione client AI e tool MCP.
 
 ## Indice
 
-- [Panoramica](#panoramica)
 - [Funzionalità](#funzionalità)
 - [Requisiti](#requisiti)
 - [Installazione](#installazione)
 - [Avvio Rapido](#avvio-rapido)
-- [Configurazione](#configurazione)
-- [Comandi/Strumenti](#comandistrumenti)
+- [Strumenti](#strumenti)
 - [Troubleshooting](#troubleshooting)
 - [Sicurezza](#sicurezza)
-- [Contributi](#contributi)
 - [Licenza](#licenza)
-
-## Panoramica
-
-> Aggiornare con scopo progetto in 1-2 frasi.
 
 ## Funzionalità
 
-> Elenco punti chiave.
+- Tool base per smoke test MCP
+- Output in italiano
+- Setup semplice su stdio
 
 ## Requisiti
 
+- Node.js 20+
+- npm 10+
+
 ## Installazione
+
+```bash
+npm install
+npm run build
+```
 
 ## Avvio Rapido
 
-## Configurazione
+```bash
+npm run dev
+```
 
-## Comandi/Strumenti
+## Strumenti
+
+- `verifica_collegamento`
+- `calcola_somma`
 
 ## Troubleshooting
 
+- errore avvio: controlla `node -v`
+- tool non trovato: esegui `npm run build`
+
 ## Sicurezza
 
-## Contributi
+- non esporre MCP su rete pubblica senza controllo accessi
 
 ## Licenza
 
-## Existing Notes
-
+MIT
