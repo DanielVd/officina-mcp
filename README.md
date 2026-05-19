@@ -1,6 +1,7 @@
 # officina-mcp
 
 ![Node](https://img.shields.io/badge/node-20%2B-green)
+[![Latest Release](https://img.shields.io/github/v/release/DanielVd/officina-mcp)](https://github.com/DanielVd/officina-mcp/releases/latest)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 
 Server MCP minimale per testare integrazione tra client AI e strumenti MCP, con output e messaggi in italiano.
